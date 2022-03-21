@@ -1,17 +1,17 @@
-import { FiInstagram } from 'react-icons/fi';
-import { BsLinkedin, BsFillBasketFill } from 'react-icons/bs';
+import { BsInstagram, BsLinkedin, BsGithub } from 'react-icons/bs';
+import "./styles.css";
 
 export default function Social() {
     return (
-        <div style={{display: "flex", justifyContent: "center", alignItems: "center", padding: 30}}>
+        <div className="container-social">
             <a>
-                <FiInstagram size={60} color="purple" />
+                <BsInstagram size={60} />
             </a>
             <a>
-                <BsLinkedin size={60} color="blue" />
+                <BsLinkedin size={60} />
             </a>
             <a>
-                <BsFillBasketFill size={60} />  
+                <BsGithub size={60} />  
             </a>
         </div>
     );
