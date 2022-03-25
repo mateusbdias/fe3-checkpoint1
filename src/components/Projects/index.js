@@ -1,40 +1,26 @@
+import fotoClinica from "../../assets/clinica.png";
+import fotoTodo from "../../assets/todo.png";
+import fotoSP from "../../assets/sao_paulo.png";
 import "./styles.css";
 
 const data = [
     {
       id: "1",
-      name: "Lorem Ipsum",
-      link: "https://github.com/brunowbbs/Frontend-III",
-      image:
-        "https://howedu.com.br/wp-content/uploads/2021/05/Captura-de-Tela-2021-05-06-a%CC%80s-10.21.22-1024x603.png",
+      name: "Projeto Clínica - Back End I",
+      link: "https://github.com/mateusbdias/be1-aula21",
+      image: fotoClinica,
     },
     {
       id: "2",
-      name: "Lorem Ipsum",
-      link: "https://github.com/brunowbbs/Frontend-III",
-      image:
-        "https://howedu.com.br/wp-content/uploads/2021/05/Captura-de-Tela-2021-05-06-a%CC%80s-10.21.22-1024x603.png",
+      name: "React To-Do - Front End III",
+      link: "https://github.com/mateusbdias/fe3-aula07",
+      image: fotoTodo,
     },
     {
       id: "3",
-      name: "Lorem Ipsum",
-      link: "https://github.com/brunowbbs/Frontend-III",
-      image:
-        "https://howedu.com.br/wp-content/uploads/2021/05/Captura-de-Tela-2021-05-06-a%CC%80s-10.21.22-1024x603.png",
-    },
-    {
-      id: "4",
-      name: "Lorem Ipsum",
-      link: "https://github.com/brunowbbs/Frontend-III",
-      image:
-        "https://howedu.com.br/wp-content/uploads/2021/05/Captura-de-Tela-2021-05-06-a%CC%80s-10.21.22-1024x603.png",
-    },
-    {
-      id: "5",
-      name: "Lorem Ipsum",
-      link: "https://github.com/brunowbbs/Frontend-III",
-      image:
-        "https://howedu.com.br/wp-content/uploads/2021/05/Captura-de-Tela-2021-05-06-a%CC%80s-10.21.22-1024x603.png",
+      name: "Info SP - Front End I",
+      link: "https://github.com/mateusbdias/frontend1-checkpoint1",
+      image: fotoSP,
     },
   ];
 
@@ -47,7 +33,7 @@ export default function Projects() {
                     data.map(({ image, name, link }) => (
                       <a href={link}>
                         <li className="item-list-projects">
-                            <img src={image} width={350} />
+                            <img src={image} alt={name} width={350} />
                             <h3 className="name-project">{name}</h3>
                         </li>
                       </a>

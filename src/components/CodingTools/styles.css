@@ -1,0 +1,33 @@
+.content-tools{
+    background-color: lightskyblue;
+}
+
+.list-tools{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title-tools{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.item-list-tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    gap: 30px;
+    margin: 30px 50px;
+    padding: 20px;
+    border: 1px solid lightslategray;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.name-tool{
+    font-weight: 500;
+}

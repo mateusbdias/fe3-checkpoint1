@@ -1,9 +1,14 @@
 header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
     padding: 0 20px;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu{
@@ -11,8 +16,23 @@ header{
     list-style: none;
 }
 
+.menu-hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+}
+
 .item-menu{
     margin: 0 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.item-menu-hamburger{
+    margin: 0 20px;
+    align-self: center;
     font-size: 1.3rem;
     cursor: pointer;
 }
