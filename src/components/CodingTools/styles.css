@@ -1,5 +1,5 @@
 .content-tools{
-    background-color: lightskyblue;
+    background-color: rgb(19, 80, 141);
 }
 
 .list-tools{
@@ -10,7 +10,7 @@
 
 .title-tools{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-top: 20px;
     font-weight: 300;
 }
@@ -22,9 +22,9 @@
     width: 230px;
     margin: 30px 50px;
     padding: 20px;
-    border: 1px solid lightslategray;
+    border: 2px solid lightslategray;
     border-radius: 15px;
-    background-color: aliceblue;
+    background-color: rgb(212, 235, 250);
 }
 
 .tool{

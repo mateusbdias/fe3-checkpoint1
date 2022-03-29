@@ -1,35 +1,69 @@
 main{
-    background-color: rgba(0, 128, 128, 0.493);
+    background-image: url("../../assets/coding.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
     height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 50px;
-    gap: 50px;
+    gap: 60px;
 }
 
 .img-about{
     width: 350px;
+    border: 5px solid aliceblue;
+    border-radius: 10px;
 }
 
-@media(max-width: 700px){
-    .img-about{
-        width: 50vw;
+p{
+    background-color: teal;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 828px){
+    p{
+        background-color: teal;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 1.15rem;
     }
 }
 
-@media(max-width: 582px){
+@media(max-width: 800px){
     main{
         background-color: rgba(0, 128, 128, 0.493);
-        height: calc(100vh - 70px);
+        height: calc(100vh - 120px);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 50px;
-        gap: 50px;
+        padding: 20px 30px;
+        gap: 30px;
     }
     .img-about{
-        width: 300px;
+        height: 35vw;
+        width: auto;
+    }
+}
+
+@media(max-width: 600px){
+    .img-about{
+        height: 210px;
+        width: auto;
+    }
+}
+
+@media(max-width: 560px){
+    p{
+        background-color: teal;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 1rem;
     }
 }

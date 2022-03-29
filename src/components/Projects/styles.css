@@ -1,5 +1,5 @@
 .content-projects{
-    background-color: lightcoral;
+    background-color: rgb(5, 5, 43);
 }
 
 .list-projects{
@@ -10,21 +10,27 @@
 
 .title-projects{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-top: 20px;
     font-weight: 300;
+    color: lightblue;
 }
 
 .item-list-projects{
+    background-color: rgb(35, 82, 126);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 30px 50px;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
 }
 
 .item-list-projects > img{
-    width: 350px;
+    width: 300px;
+    height: 164.38px;
 }
 
 .name-project{
@@ -41,6 +47,7 @@
         margin: 30px 11.11vw;
     }
     .item-list-projects > img{
-        width: 77.77vw;
+        width: 66.66vw;
+        height: 36.52vw;
     }
 }
