@@ -8,6 +8,16 @@ main{
     gap: 50px;
 }
 
+.img-about{
+    width: 350px;
+}
+
+@media(max-width: 700px){
+    .img-about{
+        width: 50vw;
+    }
+}
+
 @media(max-width: 582px){
     main{
         background-color: rgba(0, 128, 128, 0.493);
@@ -18,5 +28,8 @@ main{
         align-items: center;
         padding: 0 50px;
         gap: 50px;
+    }
+    .img-about{
+        width: 300px;
     }
 }

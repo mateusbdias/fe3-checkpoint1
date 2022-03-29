@@ -40,12 +40,14 @@ export default function CodingTools() {
             <ul className="list-tools">
                 {
                     data.map(({ image, name, link }) => (
-                        <a href={link}>
-                            <li className="item-list-tools">
-                            <img src={image} alt={name} height={80} />
-                            <h3 className="name-tool">{name}</h3>
+                        <li className="item-list-tools">
+                            <a href={link}>
+                                <div className="tool" id={name}>
+                                    <img src={image} alt={name} />
+                                    <h3 className="name-tool">{name}</h3>
+                                </div>
+                            </a>
                         </li>
-                        </a>
                     ))
                 }
             </ul>

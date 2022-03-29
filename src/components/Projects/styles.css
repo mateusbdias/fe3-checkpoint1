@@ -23,7 +23,24 @@
     margin: 30px 50px;
 }
 
+.item-list-projects > img{
+    width: 350px;
+}
+
 .name-project{
     font-weight: 300;
     margin-top: 10px;
+}
+
+@media(max-width: 450px){
+    .item-list-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 11.11vw;
+    }
+    .item-list-projects > img{
+        width: 77.77vw;
+    }
 }

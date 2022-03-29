@@ -9,18 +9,11 @@ header{
 .header-menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.menu{
+.list-menu{
     display: flex;
-    list-style: none;
-}
-
-.menu-hamburger{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
     list-style: none;
 }
 
@@ -30,9 +23,62 @@ header{
     cursor: pointer;
 }
 
+.header-menu-hamburger{
+    display: none;
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+.list-menu-hamburger{
+    display: none;
+}
+
 .item-menu-hamburger{
-    margin: 0 20px;
-    align-self: center;
-    font-size: 1.3rem;
-    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 500px){
+    .header-menu{
+        display: none;
+    }
+
+    .list-menu{
+        display: none;
+    }
+    
+    .item-menu{
+        display: none;
+    }
+
+    .header-menu-hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0 10px 0;
+    }
+
+    .menu-hamburger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list-menu-hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+    }
+    
+    .item-menu-hamburger{
+        display: flex;
+        margin: 0 20px;
+        margin-bottom: 10px;
+        align-self: center;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
 }

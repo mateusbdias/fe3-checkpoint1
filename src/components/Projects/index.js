@@ -33,7 +33,7 @@ export default function Projects() {
                     data.map(({ image, name, link }) => (
                       <a href={link}>
                         <li className="item-list-projects">
-                            <img src={image} alt={name} width={350} />
+                            <img src={image} alt={name} />
                             <h3 className="name-project">{name}</h3>
                         </li>
                       </a>
